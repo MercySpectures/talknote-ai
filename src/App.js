@@ -162,7 +162,7 @@ export default function App() {
           { inlineData: { mimeType: "audio/webm", data: base64Audio } }
         ]}]
       };
-      const apiKey = "AIzaSyDwwVdbr6t5s3KQ9TRXrehdyR-c2B7K1RA";
+      const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
       try {
