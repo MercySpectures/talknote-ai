@@ -50,12 +50,11 @@ You need to have Node.js and npm installed on your machine.
     ```sh
     npm install
     ```
-4.  **Add your Gemini API Key**
-    *   Open the `src/App.js` file.
-    *   Find the `transcribeAudio` function.
-    *   Replace the placeholder `"YOUR_GEMINI_API_KEY"` with your actual API key.
-    ```javascript
-    const apiKey = "YOUR_GEMINI_API_KEY";
+4.  **Create an environment file**
+    *   Create a `.env` file in the root of your project directory.
+    *   Add your Gemini API key to the `.env` file like this:
+    ```
+    REACT_APP_GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
     ```
 5.  **Start the development server**
     ```sh
